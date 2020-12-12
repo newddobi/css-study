@@ -1,0 +1,111 @@
+header {
+    .header-web {
+        @include mq('mobile') {
+            display: none;
+        }
+    
+        border-bottom: 1px solid $color-light-grey-2;
+    
+        .header-text {
+            color: $color-white;
+            text-align: center;
+            background-color: $color-default-blue;
+            height: 4rem;
+            line-height: 4rem;
+        }
+    
+        .header-image {
+            @include display-flex(flex, row, nowrap);
+            @include justify-content(center);
+            @include align-items(center);
+    
+            height: 12.4rem;
+        }
+    }
+
+    .header-mobile {
+        @include mq('pc') {
+            display: none;
+        }
+
+        height: 5rem;
+        width: 100%;
+        position: fixed;
+        background-color: $color-white;
+
+        .hamburger {
+            &-checkbox {
+                display: none;
+            }
+        
+            // 라벨을 체크박스처럼 사용
+            &-button {
+                width: 2.4rem;
+                height: 2.4rem;
+                // 화면따라 내려오도록 fixed 부여
+                position: fixed;
+                top: 1.3rem;
+                left: 1.6rem;
+                cursor: pointer;
+                
+                transition: all .15s;
+            }
+
+            // ICON
+            &-icon {
+                position: relative;
+                margin-top: 1.2rem;
+                
+                &::before {
+                    top: -0.7rem;
+                }
+                
+                &::after {
+                    top: 0.7rem;
+                }
+                
+                &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                }
+                
+                &, &::before, &::after {
+                    width: 2.4rem;
+                    height: 2px;
+                    background-color: $color-default-blue;
+                    display: inline-block;
+                    transition: all .2s;
+                }
+            }
+
+            &-checkbox:checked ~ .hamburger-button .hamburger-icon {
+                // 체크 시 가운데줄 투명
+                background-color: transparent;
+            }
+            // 햄버거 상단 선 잡기
+            &-checkbox:checked ~ .hamburger-button .hamburger-icon::before {
+                top: 0;
+                transform: rotate(135deg);
+            }
+            // 햄버거 하단 선 잡기
+            &-checkbox:checked ~ .hamburger-button .hamburger-icon::after {
+                top: 0;
+                transform: rotate(-135deg);
+            }
+
+            &-checkbox:checked ~ .nav-hamburger {
+               display: block; 
+            }
+        }
+
+        .header-image {
+            height: 100%;
+            @include display-flex(flex, row, nowrap);
+            @include justify-content(center);
+            @include align-items(center);
+        }
+    }
+
+
+}

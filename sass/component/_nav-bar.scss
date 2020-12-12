@@ -1,0 +1,57 @@
+nav {
+    
+    .navbar {
+        @include mq('mobile') {
+            display: none;
+        }
+        
+        @include display-flex(flex, row, nowrap);
+        @include justify-content(center);
+        @include align-items(flex-end);
+
+        .subnav{
+            @include display-flex(flex, column, nowrap);
+            @include justify-content(center);
+            height: 7.4rem;
+            width: 16.1rem;
+            position: relative;
+
+            &:hover .sub-title {
+                color: $color-default-blue;
+            }
+            &:hover .sub-content {
+                display: block;
+            }
+            
+            .sub-title {
+                text-align: center;
+            }
+
+            .sub-content {
+                position: absolute;
+                display: none;
+                top: 7.4rem;
+                z-index: 1;
+
+                a {
+                    width: 22rem;
+                    height: 5rem;
+                    display: block;
+                    text-decoration: none;
+                    background-color: $color-white;
+                    border-top: 1px solid $color-light-grey-2;
+                    border-bottom: 1px solid $color-light-grey-2;
+                    color: $color-dark-grey-2;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    padding: 1.6rem .8rem;
+
+                    &:hover {
+                        color: $color-white;
+                        background-color: $color-light-blue-2;
+                    }
+                }
+            }
+        }
+    }
+}

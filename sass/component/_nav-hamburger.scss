@@ -1,0 +1,53 @@
+.nav-hamburger{
+    position: fixed;
+    display: none;
+    top: 5rem;
+
+    .nav-hamburger-wrapper {
+        @include display-flex(flex, column, nowrap);
+
+        .sub-nav-hamburger {
+            &-checkbox {
+                display: none;
+            }
+    
+            &-title {
+                background-color: $color-white;
+                width: 22rem;
+                height: 5.2rem;
+                border-bottom: 1px solid $color-light-grey-2;
+                padding-top: 1rem;
+                padding-left: 1.6rem;
+            }
+    
+            &-content {
+                display: none;
+                font-size: 1.5rem;
+                font-weight: 400;
+                background-color: $color-white;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $color-dark-grey-2;
+                    height: 3.4rem;
+                    padding-top: .6rem;
+                    padding-left: 1.6rem;
+                }
+            }
+
+            &-checkbox:checked ~ .sub-nav-hamburger-button .sub-nav-hamburger-title {
+                color: $color-white;
+                background-color: $color-light-blue-2;
+            }
+
+            a:hover {
+                color: $color-default-blue;
+            }
+
+            &-checkbox:checked ~ .sub-nav-hamburger-content {
+                display: block;
+            }
+        }
+    }
+}

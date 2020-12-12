@@ -1,0 +1,57 @@
+// 구글폰트 - 나눔고딕, Lato
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+// Icon Font
+// https://material.io/icons
+// @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 16px의 62.5% = 10px = 1rem
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .app-container {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "footer";
+        grid-template-rows: 16.4rem 7.4rem auto 10em;
+        height: 100vh;
+        
+        @include mq('mobile') {
+            grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+            grid-template-rows: 5rem .1rem auto 25.4em;
+        }
+    }
+
+}
