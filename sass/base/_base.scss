@@ -45,11 +45,6 @@ body {
         height: 100vh;
         
         @include mq('mobile') {
-            grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "footer";
             grid-template-rows: 5rem .1rem auto 25.4em;
         }
     }

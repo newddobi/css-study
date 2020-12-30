@@ -38,7 +38,6 @@ body .app-container {
 
 @media screen and (max-width: 650px) {
   body .app-container {
-    grid-template-areas: "header" "nav" "main" "footer";
     grid-template-rows: 5rem .1rem auto 25.4em;
   }
 }
@@ -143,7 +142,6 @@ nav .navbar .subnav .sub-content {
   position: absolute;
   display: none;
   top: 7.4rem;
-  z-index: 1;
 }
 
 nav .navbar .subnav .sub-content a {
@@ -238,6 +236,7 @@ header .header-web .header-text {
   background-color: #12429f;
   height: 4rem;
   line-height: 4rem;
+  margin: 0 auto;
 }
 
 header .header-web .header-image {

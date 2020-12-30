@@ -1,278 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>연세디자인치과</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <div class="app-container">
-      <header>
-        <!-- 웹용 헤더 -->
-        <div class="header-web">
-          <div class="header-text font-body-1">
-            연세디자인치과만의 특별함, 담당 주치의의 꾸준한 책임관리!
-            연세디자인치과에 오세요
-          </div>
-          <div class="header-image">
-            <img
-              id="logo_web"
-              src="./images/logo_web.svg"
-              style="width: auto; height: 6.5rem"
-              alt="연세디자인 치과 웹 로고"
-            />
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>연세디자인치과</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <div class="app-container">
+            <header>
+                <!-- 웹용 헤더 -->
+                <div class="header-web">
+                    <div class="header-text font-body-1">
+                        연세디자인치과만의 특별함, 담당 주치의의 꾸준한
+                        책임관리! 연세디자인치과에 오세요
+                    </div>
+                    <div class="header-image">
+                        <img
+                            id="logo_web"
+                            src="./images/logo_web.svg"
+                            style="width: auto; height: 6.5rem"
+                            alt="연세디자인 치과 웹 로고"
+                        />
+                    </div>
+                </div>
+                <!-- 모바일용 헤더 -->
+                <div class="header-mobile">
+                    <div class="hamburger">
+                        <input
+                            type="checkbox"
+                            class="hamburger-checkbox"
+                            id="hamburger-toggle"
+                        />
+                        <!-- 라벨 안 빈공백으로 대체 -->
+                        <label for="hamburger-toggle" class="hamburger-button">
+                            <span class="hamburger-icon">&nbsp;</span>
+                        </label>
+
+                        <!-- 모바일용 네비게이션 메뉴 -->
+                        <div class="nav-hamburger">
+                            <div class="nav-hamburger-wrapper">
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle1"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle1"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            연세디자인치과
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">연세디자인치과의 특별함</a>
+                                        <a href="#">치주과 대표원장 인사말</a>
+                                        <a href="#">교정과 대표원장 인사말</a>
+                                        <a href="#">의료진소개</a>
+                                        <a href="#"
+                                            >감염안심 전체 단독 진료실</a
+                                        >
+                                        <a href="#">치과 둘러보기</a>
+                                        <a href="#"
+                                            >진료 및 예약안내/오시는길</a
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle2"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle2"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            치아교정
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">Design의 특별한 치아교정</a>
+                                        <a href="#"
+                                            >교정과 대표원장의 책임진료</a
+                                        >
+                                        <a href="#">1day 프로그램</a>
+                                        <a href="#">치아교정/충치안심 보충제</a>
+                                        <a href="#">성장기 언리이 교정</a>
+                                        <a href="#">성인교정/급속 앞니교정</a>
+                                        <a href="#">중년/실버 건강교정</a>
+                                        <a href="#">재교정</a>
+                                        <a href="#">교정장치 종류</a>
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle3"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle3"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            마이 교정앨범
+                                        </div>
+                                    </label>
+                                    <div
+                                        class="sub-nav-hamburger-content"
+                                    ></div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle4"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle4"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            임플란트
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">Design 임플란트의 특별함</a>
+                                        <a href="#"
+                                            >담당 의사의 꾸준한 책임진료</a
+                                        >
+                                        <a href="#">임플란트 보증제도</a>
+                                        <a href="#">네비게이션 임플란트</a>
+                                        <a href="#">발치즉시 임플란트</a>
+                                        <a href="#">고난이도 뼈이식 수술</a>
+                                        <a href="#">고난이도 상악동 임플란트</a>
+                                        <a href="#">건강보험 임플란트, 틀니</a>
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle5"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle5"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            사랑니발치/수술
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#"
+                                            >Design의 특별한 발치/수술</a
+                                        >
+                                        <a href="#">대학병원급 사랑니 발치</a>
+                                        <a href="#">고난도 매복 발치</a>
+                                        <a href="#"
+                                            >무너진 잇몸 회복 프로그램</a
+                                        >
+                                        <a href="#">치주수술(잇몸수술)</a>
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle6"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle6"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            심미성형
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">Design의 특별한 심미성형</a>
+                                        <a href="#">무삭제 라미네이트</a>
+                                        <a href="#">앞니 재보철치료</a>
+                                        <a href="#">잇몸성형</a>
+                                        <a href="#">치아미백</a>
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle7"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle7"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            일반진료
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">Design 자연치아살리기</a>
+                                        <a href="#">간단 충치치료</a>
+                                        <a href="#">신경치료 및 보철치료</a>
+                                        <a href="#">재신경치료</a>
+                                        <a href="#">치아재식술/치근단절제술</a>
+                                        <a href="#">턱관절 치료</a>
+                                    </div>
+                                </div>
+
+                                <div class="sub-nav-hamburger">
+                                    <input
+                                        type="radio"
+                                        name="menu"
+                                        class="sub-nav-hamburger-checkbox"
+                                        id="sub-nav-hamburger-toggle8"
+                                    />
+                                    <label
+                                        for="sub-nav-hamburger-toggle8"
+                                        class="sub-nav-hamburger-button"
+                                    >
+                                        <div
+                                            class="sub-nav-hamburger-title font-subhead-2"
+                                        >
+                                            커뮤니티
+                                        </div>
+                                    </label>
+                                    <div class="sub-nav-hamburger-content">
+                                        <a href="#">공지사항</a>
+                                        <a href="#">전문의 칼럼</a>
+                                        <a href="#">자주 묻는 질문</a>
+                                        <a href="#">카카오톡 실시간 상담</a>
+                                        <a href="#">자필치료후기</a>
+                                        <a href="#">치료 전후사진</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-image">
+                        <img
+                            id="logo_web"
+                            src="./images/logo_mobile.svg"
+                            style="width: auto; height: 3.4rem"
+                            alt="연세디자인 치과 모바일 로고"
+                        />
+                    </div>
+                </div>
+            </header>
+
+            <nav>
+                <!-- 웹용 네비게이션 메뉴 -->
+                <div class="navbar">
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">
+                            연세디자인치과
+                        </div>
+                        <div class="sub-content">
+                            <a href="#">연세디자인치과의 특별함</a>
+                            <a href="#">치주과 대표원장 인사말</a>
+                            <a href="#">교정과 대표원장 인사말</a>
+                            <a href="#">의료진소개</a>
+                            <a href="#">감염안심 전체 단독 진료실</a>
+                            <a href="#">치과 둘러보기</a>
+                            <a href="#">진료 및 예약안내/오시는길</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">치아교정</div>
+                        <div class="sub-content">
+                            <a href="#">Design의 특별한 치아교정</a>
+                            <a href="#">교정과 대표원장의 책임진료</a>
+                            <a href="#">1day 프로그램</a>
+                            <a href="#">치아교정/충치안심 보충제</a>
+                            <a href="#">성장기 언리이 교정</a>
+                            <a href="#">성인교정/급속 앞니교정</a>
+                            <a href="#">중년/실버 건강교정</a>
+                            <a href="#">재교정</a>
+                            <a href="#">교정장치 종류</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">
+                            마이 교정앨범
+                        </div>
+                        <div class="sub-content"></div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">임플란트</div>
+                        <div class="sub-content">
+                            <a href="#">Design 임플란트의 특별함</a>
+                            <a href="#">담당 의사의 꾸준한 책임진료</a>
+                            <a href="#">임플란트 보증제도</a>
+                            <a href="#">네비게이션 임플란트</a>
+                            <a href="#">발치즉시 임플란트</a>
+                            <a href="#">고난이도 뼈이식 수술</a>
+                            <a href="#">고난이도 상악동 임플란트</a>
+                            <a href="#">건강보험 임플란트, 틀니</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">
+                            사랑니발치/수술
+                        </div>
+                        <div class="sub-content">
+                            <a href="#">Design의 특별한 발치/수술</a>
+                            <a href="#">대학병원급 사랑니 발치</a>
+                            <a href="#">고난도 매복 발치</a>
+                            <a href="#">무너진 잇몸 회복 프로그램</a>
+                            <a href="#">치주수술(잇몸수술)</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">심미성형</div>
+                        <div class="sub-content">
+                            <a href="#">Design의 특별한 심미성형</a>
+                            <a href="#">무삭제 라미네이트</a>
+                            <a href="#">앞니 재보철치료</a>
+                            <a href="#">잇몸성형</a>
+                            <a href="#">치아미백</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">일반진료</div>
+                        <div class="sub-content">
+                            <a href="#">Design 자연치아살리기</a>
+                            <a href="#">간단 충치치료</a>
+                            <a href="#">신경치료 및 보철치료</a>
+                            <a href="#">재신경치료</a>
+                            <a href="#">치아재식술/치근단절제술</a>
+                            <a href="#">턱관절 치료</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="sub-title font-subhead-2">커뮤니티</div>
+                        <div class="sub-content">
+                            <a href="#">공지사항</a>
+                            <a href="#">전문의 칼럼</a>
+                            <a href="#">자주 묻는 질문</a>
+                            <a href="#">카카오톡 실시간 상담</a>
+                            <a href="#">자필치료후기</a>
+                            <a href="#">치료 전후사진</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="main-background"></div>
+            </main>
+
+            <footer></footer>
         </div>
-        <!-- 모바일용 헤더 -->
-        <div class="header-mobile">
-          <div class="hamburger">
-            <input
-              type="checkbox"
-              class="hamburger-checkbox"
-              id="hamburger-toggle"
-            />
-            <!-- 라벨 안 빈공백으로 대체 -->
-            <label for="hamburger-toggle" class="hamburger-button">
-                <span class="hamburger-icon">&nbsp;</span>
-            </label>
-
-            <!-- 모바일용 네비게이션 메뉴 -->
-            <div class="nav-hamburger">
-              <div class="nav-hamburger-wrapper">
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle1"/>
-                  <label for="sub-nav-hamburger-toggle1" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">연세디자인치과</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">연세디자인치과의 특별함</a>
-                    <a href="#">치주과 대표원장 인사말</a>
-                    <a href="#">교정과 대표원장 인사말</a>
-                    <a href="#">의료진소개</a>
-                    <a href="#">감염안심 전체 단독 진료실</a>
-                    <a href="#">치과 둘러보기</a>
-                    <a href="#">진료 및 예약안내/오시는길</a>
-                  </div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle2"/>
-                  <label for="sub-nav-hamburger-toggle2" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">치아교정</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">Design의 특별한 치아교정</a>
-                    <a href="#">교정과 대표원장의 책임진료</a>
-                    <a href="#">1day 프로그램</a>
-                    <a href="#">치아교정/충치안심 보충제</a>
-                    <a href="#">성장기 언리이 교정</a>
-                    <a href="#">성인교정/급속 앞니교정</a>
-                    <a href="#">중년/실버 건강교정</a>
-                    <a href="#">재교정</a>
-                    <a href="#">교정장치 종류</a>
-                  </div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle3"/>
-                  <label for="sub-nav-hamburger-toggle3" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">마이 교정앨범</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content"></div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle4"/>
-                  <label for="sub-nav-hamburger-toggle4" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">임플란트</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">Design 임플란트의 특별함</a>
-                    <a href="#">담당 의사의 꾸준한 책임진료</a>
-                    <a href="#">임플란트 보증제도</a>
-                    <a href="#">네비게이션 임플란트</a>
-                    <a href="#">발치즉시 임플란트</a>
-                    <a href="#">고난이도 뼈이식 수술</a>
-                    <a href="#">고난이도 상악동 임플란트</a>
-                    <a href="#">건강보험 임플란트, 틀니</a>
-                  </div>
-                </div>
-                
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle5"/>
-                  <label for="sub-nav-hamburger-toggle5" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">사랑니발치/수술</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">Design의 특별한 발치/수술</a>
-                    <a href="#">대학병원급 사랑니 발치</a>
-                    <a href="#">고난도 매복 발치</a>
-                    <a href="#">무너진 잇몸 회복 프로그램</a>
-                    <a href="#">치주수술(잇몸수술)</a>
-                  </div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle6"/>
-                  <label for="sub-nav-hamburger-toggle6" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">심미성형</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">Design의 특별한 심미성형</a>
-                    <a href="#">무삭제 라미네이트</a>
-                    <a href="#">앞니 재보철치료</a>
-                    <a href="#">잇몸성형</a>
-                    <a href="#">치아미백</a>
-                  </div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle7"/>
-                  <label for="sub-nav-hamburger-toggle7" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">일반진료</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">Design 자연치아살리기</a>
-                    <a href="#">간단 충치치료</a>
-                    <a href="#">신경치료 및 보철치료</a>
-                    <a href="#">재신경치료</a>
-                    <a href="#">치아재식술/치근단절제술</a>
-                    <a href="#">턱관절 치료</a>
-                  </div>
-                </div>
-
-                <div class="sub-nav-hamburger">
-                  <input type="radio" name="menu" class="sub-nav-hamburger-checkbox" id="sub-nav-hamburger-toggle8"/>
-                  <label for="sub-nav-hamburger-toggle8" class="sub-nav-hamburger-button">
-                    <div class="sub-nav-hamburger-title font-subhead-2">커뮤니티</div>
-                  </label>
-                  <div class="sub-nav-hamburger-content">
-                    <a href="#">공지사항</a>
-                    <a href="#">전문의 칼럼</a>
-                    <a href="#">자주 묻는 질문</a>
-                    <a href="#">카카오톡 실시간 상담</a>
-                    <a href="#">자필치료후기</a>
-                    <a href="#">치료 전후사진</a>
-                  </div>
-                </div>
-
-                
-              </div>
-            </div>
-
-          </div>
-
-          
-          <div class="header-image">
-            <img
-              id="logo_web"
-              src="./images/logo_mobile.svg"
-              style="width: auto; height: 3.4rem"
-              alt="연세디자인 치과 웹 로고"
-            />
-          </div>
-        </div>
-      </header>
-
-      <nav>
-        <!-- 웹용 네비게이션 메뉴 -->
-        <div class="navbar">
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">연세디자인치과</div>
-            <div class="sub-content">
-              <a href="#">연세디자인치과의 특별함</a>
-              <a href="#">치주과 대표원장 인사말</a>
-              <a href="#">교정과 대표원장 인사말</a>
-              <a href="#">의료진소개</a>
-              <a href="#">감염안심 전체 단독 진료실</a>
-              <a href="#">치과 둘러보기</a>
-              <a href="#">진료 및 예약안내/오시는길</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">치아교정</div>
-            <div class="sub-content">
-              <a href="#">Design의 특별한 치아교정</a>
-              <a href="#">교정과 대표원장의 책임진료</a>
-              <a href="#">1day 프로그램</a>
-              <a href="#">치아교정/충치안심 보충제</a>
-              <a href="#">성장기 언리이 교정</a>
-              <a href="#">성인교정/급속 앞니교정</a>
-              <a href="#">중년/실버 건강교정</a>
-              <a href="#">재교정</a>
-              <a href="#">교정장치 종류</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">마이 교정앨범</div>
-            <div class="sub-content"></div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">임플란트</div>
-            <div class="sub-content">
-              <a href="#">Design 임플란트의 특별함</a>
-              <a href="#">담당 의사의 꾸준한 책임진료</a>
-              <a href="#">임플란트 보증제도</a>
-              <a href="#">네비게이션 임플란트</a>
-              <a href="#">발치즉시 임플란트</a>
-              <a href="#">고난이도 뼈이식 수술</a>
-              <a href="#">고난이도 상악동 임플란트</a>
-              <a href="#">건강보험 임플란트, 틀니</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">사랑니발치/수술</div>
-            <div class="sub-content">
-              <a href="#">Design의 특별한 발치/수술</a>
-              <a href="#">대학병원급 사랑니 발치</a>
-              <a href="#">고난도 매복 발치</a>
-              <a href="#">무너진 잇몸 회복 프로그램</a>
-              <a href="#">치주수술(잇몸수술)</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">심미성형</div>
-            <div class="sub-content">
-              <a href="#">Design의 특별한 심미성형</a>
-              <a href="#">무삭제 라미네이트</a>
-              <a href="#">앞니 재보철치료</a>
-              <a href="#">잇몸성형</a>
-              <a href="#">치아미백</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">일반진료</div>
-            <div class="sub-content">
-              <a href="#">Design 자연치아살리기</a>
-              <a href="#">간단 충치치료</a>
-              <a href="#">신경치료 및 보철치료</a>
-              <a href="#">재신경치료</a>
-              <a href="#">치아재식술/치근단절제술</a>
-              <a href="#">턱관절 치료</a>
-            </div>
-          </div>
-          <div class="subnav">
-            <div class="sub-title font-subhead-2">커뮤니티</div>
-            <div class="sub-content">
-              <a href="#">공지사항</a>
-              <a href="#">전문의 칼럼</a>
-              <a href="#">자주 묻는 질문</a>
-              <a href="#">카카오톡 실시간 상담</a>
-              <a href="#">자필치료후기</a>
-              <a href="#">치료 전후사진</a>
-            </div>
-          </div>
-
-        </div>
-      </nav>
-
-      <main>
-        <div class="main-background"></div>
-      </main>
-
-      <footer></footer>
-    </div>
-  </body>
+    </body>
 </html>
