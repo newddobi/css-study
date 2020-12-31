@@ -1,57 +1,120 @@
-.nav-hamburger{
-    position: fixed;
-    display: none;
-    top: 5rem;
-
-    @include mq('pc') {
-        position: relative;
-        display: block;
-    }
-
-    .nav-hamburger-wrapper {
-        @include display-flex(flex, column, nowrap);
-
-        .sub-nav-hamburger {
-            &-checkbox {
-                display: none;
+nav {
+    
+    .nav-hamburger{
+        position: fixed;
+        display: none;
+        top: 5rem;
+        
+        @include mq('pc') {
+            position: relative;
+            display: block;
+            top: auto;
+        }
+        
+        .nav-hamburger-wrapper {
+            @include display-flex(flex, column, nowrap);
+            
+            @include mq('pc') {
+                @include display-flex(flex, row, nowrap);
+                @include justify-content(center);
+                @include align-items(flex-end);
+                max-width: 128.8rem;
+                margin: auto;
             }
     
-            &-title {
-                background-color: $color-white;
-                width: 22rem;
-                height: 5.2rem;
-                border-bottom: 1px solid $color-light-grey-2;
-                padding-top: 1rem;
-                padding-left: 1.6rem;
-            }
-    
-            &-content {
-                display: none;
-                font-size: 1.5rem;
-                font-weight: 400;
-                background-color: $color-white;
-
-                a {
-                    display: block;
-                    text-decoration: none;
-                    color: $color-dark-grey-2;
-                    height: 3.4rem;
-                    padding-top: .6rem;
-                    padding-left: 1.6rem;
+            .sub-nav-hamburger {
+                &-checkbox {
+                    display: none;
                 }
-            }
-
-            &-checkbox:checked ~ .sub-nav-hamburger-button .sub-nav-hamburger-title {
-                color: $color-white;
-                background-color: $color-light-blue-2;
-            }
-
-            a:hover {
-                color: $color-default-blue;
-            }
-
-            &-checkbox:checked ~ .sub-nav-hamburger-content {
-                display: block;
+        
+                &-title {
+                    background-color: $color-white;
+                    height: 5.2rem;
+                    padding-top: 1rem;
+                    @include mq('mobile') {
+                        width: 22rem;
+                        padding-left: 1.6rem;
+                        border-bottom: 1px solid $color-light-grey-2;
+                    }
+                }
+        
+                &-content {
+                    display: none;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    background-color: $color-white;
+    
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: $color-dark-grey-2;
+                        height: 3.4rem;
+                        padding-top: .6rem;
+                        padding-left: 1.6rem;
+                    }
+                }
+    
+                &-checkbox:checked ~ .sub-nav-hamburger-button .sub-nav-hamburger-title {
+                    color: $color-white;
+                    background-color: $color-light-blue-2;
+                }
+    
+                a:hover {
+                    color: $color-default-blue;
+                }
+    
+                &-checkbox:checked ~ .sub-nav-hamburger-content {
+                    display: block;
+                }
+    
+                @include mq('pc') {
+                    @include display-flex(flex, column, nowrap);
+                    @include justify-content(center);
+                    height: 7.4rem;
+                    min-width: 12.8rem;
+                    position: relative;
+                    flex-grow: 1;
+    
+                    .sub-nav-hamburger-button {
+                        pointer-events: none;
+                    }
+    
+                    &:hover .sub-nav-hamburger-title {
+                        color: $color-default-blue;
+                    }
+                    &:hover .sub-nav-hamburger-content {
+                        display: block;
+                    }
+                    
+                    .sub-nav-hamburger-title {
+                        text-align: center;
+                    }
+    
+                    .sub-nav-hamburger-content {
+                        position: absolute;
+                        display: none;
+                        top: 7.4rem;
+    
+                        a {
+                            width: 22rem;
+                            height: 5rem;
+                            display: block;
+                            text-decoration: none;
+                            background-color: $color-white;
+                            border-top: 1px solid $color-light-grey-2;
+                            border-bottom: 1px solid $color-light-grey-2;
+                            color: $color-dark-grey-2;
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            padding: 1.6rem .8rem;
+    
+                            &:hover {
+                                color: $color-white;
+                                background-color: $color-light-blue-2;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

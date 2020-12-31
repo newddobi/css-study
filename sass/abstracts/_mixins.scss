@@ -8,12 +8,12 @@
 
 @mixin mq($screen-width) {
     @if $screen-width == 'pc' {
-        @media screen and (min-width: 651px) {
+        @media screen and (min-width: 1024px) {
             @content;
         }
     }
     @else if $screen-width == 'mobile' {
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 1023px) {
             @content;
         }
     }

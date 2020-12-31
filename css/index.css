@@ -36,7 +36,7 @@ body .app-container {
   height: 100vh;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   body .app-container {
     grid-template-rows: 5rem .1rem auto 25.4em;
   }
@@ -96,87 +96,21 @@ body .app-container {
   font-weight: 400;
 }
 
-nav .navbar {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-@media screen and (max-width: 650px) {
-  nav .navbar {
-    display: none;
-  }
-}
-
-nav .navbar .subnav {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: 7.4rem;
-  width: 16.1rem;
-  position: relative;
-}
-
-nav .navbar .subnav:hover .sub-title {
-  color: #12429f;
-}
-
-nav .navbar .subnav:hover .sub-content {
-  display: block;
-}
-
-nav .navbar .subnav .sub-title {
-  text-align: center;
-}
-
-nav .navbar .subnav .sub-content {
-  position: absolute;
-  display: none;
-  top: 7.4rem;
-}
-
-nav .navbar .subnav .sub-content a {
-  width: 22rem;
-  height: 5rem;
-  display: block;
-  text-decoration: none;
-  background-color: #ffffff;
-  border-top: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-  color: #555555;
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding: 1.6rem .8rem;
-}
-
-nav .navbar .subnav .sub-content a:hover {
-  color: #ffffff;
-  background-color: #5e8ce4;
-}
-
-.nav-hamburger {
+nav .nav-hamburger {
   position: fixed;
   display: none;
   top: 5rem;
 }
 
-@media screen and (min-width: 651px) {
-  .nav-hamburger {
+@media screen and (min-width: 1024px) {
+  nav .nav-hamburger {
     position: relative;
     display: block;
+    top: auto;
   }
 }
 
-.nav-hamburger .nav-hamburger-wrapper {
+nav .nav-hamburger .nav-hamburger-wrapper {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -185,27 +119,47 @@ nav .navbar .subnav .sub-content a:hover {
   flex-wrap: nowrap;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox {
+@media screen and (min-width: 1024px) {
+  nav .nav-hamburger .nav-hamburger-wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 128.8rem;
+    margin: auto;
+  }
+}
+
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox {
   display: none;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-title {
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-title {
   background-color: #ffffff;
-  width: 22rem;
   height: 5.2rem;
-  border-bottom: 1px solid #c4c4c4;
   padding-top: 1rem;
-  padding-left: 1.6rem;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-content {
+@media screen and (max-width: 1023px) {
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-title {
+    width: 22rem;
+    padding-left: 1.6rem;
+    border-bottom: 1px solid #c4c4c4;
+  }
+}
+
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-content {
   display: none;
   font-size: 1.5rem;
   font-weight: 400;
   background-color: #ffffff;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-content a {
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-content a {
   display: block;
   text-decoration: none;
   color: #555555;
@@ -214,24 +168,74 @@ nav .navbar .subnav .sub-content a:hover {
   padding-left: 1.6rem;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox:checked ~ .sub-nav-hamburger-button .sub-nav-hamburger-title {
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox:checked ~ .sub-nav-hamburger-button .sub-nav-hamburger-title {
   color: #ffffff;
   background-color: #5e8ce4;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger a:hover {
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger a:hover {
   color: #12429f;
 }
 
-.nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox:checked ~ .sub-nav-hamburger-content {
+nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox:checked ~ .sub-nav-hamburger-content {
   display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 7.4rem;
+    min-width: 12.8rem;
+    position: relative;
+    flex-grow: 1;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-button {
+    pointer-events: none;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger:hover .sub-nav-hamburger-title {
+    color: #12429f;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger:hover .sub-nav-hamburger-content {
+    display: block;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-title {
+    text-align: center;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-content {
+    position: absolute;
+    display: none;
+    top: 7.4rem;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-content a {
+    width: 22rem;
+    height: 5rem;
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    color: #555555;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1.6rem .8rem;
+  }
+  nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-content a:hover {
+    color: #ffffff;
+    background-color: #5e8ce4;
+  }
 }
 
 header .header-web {
   border-bottom: 1px solid #c4c4c4;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1023px) {
   header .header-web {
     display: none;
   }
@@ -265,7 +269,7 @@ header .header-mobile {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 1024px) {
   header .header-mobile {
     display: none;
   }
