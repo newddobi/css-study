@@ -41,11 +41,11 @@ body {
           "nav"
           "main"
           "footer";
-        grid-template-rows: 16.4rem 7.4rem auto 10em;
+        grid-template-rows: 16.4rem 7.4rem auto 28rem;
         height: 100vh;
         
         @include mq('mobile') {
-            grid-template-rows: 5rem .1rem auto 25.4em;
+            grid-template-rows: 5rem .1rem auto 25.4rem;
         }
     }
 

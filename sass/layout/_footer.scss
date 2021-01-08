@@ -1,3 +1,45 @@
 footer {
-    background-color: $color-light-grey-2;
+    background-color: $color-light-grey-3;
+
+    .footer-container {
+        max-width: 132rem;
+        margin: auto;
+        padding: 0 1.6rem;
+        
+        .footer-logo {
+            margin-top: 8rem;
+            margin-right: 14.2rem;
+            float: left;
+        }
+        .footer-text {
+            margin-top: 8rem;
+            float: left;
+            color: $color-light-grey-1;
+            line-height: 1.7rem;
+
+            &-head {
+                font-weight: bold;
+            }
+
+            &-ceo {
+                .ceo_name {
+                    padding-right: .4rem;
+                    border-right: .1rem solid $color-light-grey-1;
+                }
+                .ceo_numnber {
+                    padding-left: .4rem;
+                }
+            }
+            
+            &-phone {
+                .phone_mobile {
+                    padding-right: .4rem;
+                    border-right: .1rem solid $color-light-grey-1;
+                }
+                .phone_fax {
+                    padding-left: .4rem;
+                }
+            }
+        }
+    }
 }

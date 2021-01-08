@@ -32,13 +32,13 @@ body footer {
 body .app-container {
   display: grid;
   grid-template-areas: "header" "nav" "main" "footer";
-  grid-template-rows: 16.4rem 7.4rem auto 10em;
+  grid-template-rows: 16.4rem 7.4rem auto 28rem;
   height: 100vh;
 }
 
 @media screen and (max-width: 1023px) {
   body .app-container {
-    grid-template-rows: 5rem .1rem auto 25.4em;
+    grid-template-rows: 5rem .1rem auto 25.4rem;
   }
 }
 
@@ -355,6 +355,47 @@ main .main-background {
 }
 
 footer {
-  background-color: #c4c4c4;
+  background-color: #eaeaea;
+}
+
+footer .footer-container {
+  max-width: 132rem;
+  margin: auto;
+  padding: 0 1.6rem;
+}
+
+footer .footer-container .footer-logo {
+  margin-top: 8rem;
+  margin-right: 14.2rem;
+  float: left;
+}
+
+footer .footer-container .footer-text {
+  margin-top: 8rem;
+  float: left;
+  color: #777777;
+  line-height: 1.7rem;
+}
+
+footer .footer-container .footer-text-head {
+  font-weight: bold;
+}
+
+footer .footer-container .footer-text-ceo .ceo_name {
+  padding-right: .4rem;
+  border-right: 0.1rem solid #777777;
+}
+
+footer .footer-container .footer-text-ceo .ceo_numnber {
+  padding-left: .4rem;
+}
+
+footer .footer-container .footer-text-phone .phone_mobile {
+  padding-right: .4rem;
+  border-right: 0.1rem solid #777777;
+}
+
+footer .footer-container .footer-text-phone .phone_fax {
+  padding-left: .4rem;
 }
 /*# sourceMappingURL=index.css.map */
