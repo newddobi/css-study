@@ -6,16 +6,33 @@ footer {
         margin: auto;
         padding: 0 1.6rem;
         
+        @include mq('mobile') {
+            @include display-flex(flex, column, nowrap);
+            @include justify-content(center);
+            min-width: 36rem;
+        }
+
         .footer-logo {
             margin-top: 8rem;
             margin-right: 14.2rem;
             float: left;
+
+            @include mq('mobile') {
+                float: none;
+                margin: 1.6rem auto;
+                
+            }
         }
         .footer-text {
             margin-top: 8rem;
             float: left;
             color: $color-light-grey-1;
             line-height: 1.7rem;
+
+            @include mq('mobile') {
+                text-align: center;
+                margin-top: 0;
+            }
 
             &-head {
                 font-weight: bold;

@@ -14,14 +14,47 @@ header {
             line-height: 4rem;
             margin: 0 auto;
         }
-    
-        .header-image {
+        .header-wrapper {
+            max-width: 128.8rem;
+            margin: auto;
             @include display-flex(flex, row, nowrap);
-            @include justify-content(center);
-            @include align-items(center);
-    
-            height: 12.4rem;
+            @include justify-content(space-between);
+
+            .header-info {
+                margin-top: 2.9rem;
+                width: 15.1rem;
+                height: 5.6rem;
+
+                .info-text {
+                    color: $color-dark-grey-1;
+                }
+
+                .info-phone {
+                    color: $color-default-blue
+                }
+            }
+
+            .header-image {
+                @include display-flex(flex, row, nowrap);
+                @include justify-content(center);
+                @include align-items(center);
+        
+                height: 12.4rem;
+            }
+
+            .header-sns {
+                margin-top: 4.3rem;
+
+                img{
+                    cursor: pointer;
+                }
+                
+                img:not(:last-child) {
+                    margin-right: 1.6rem;
+                }
+            }
         }
+    
     }
 
     .header-mobile {
