@@ -4,6 +4,7 @@ nav {
         position: fixed;
         display: none;
         top: 5rem;
+        z-index: 3;
         
         @include mq('pc') {
             position: relative;
@@ -66,7 +67,7 @@ nav {
                 &-checkbox:checked ~ .sub-nav-hamburger-content {
                     display: block;
                 }
-    
+
                 @include mq('pc') {
                     @include display-flex(flex, column, nowrap);
                     @include justify-content(center);
@@ -94,6 +95,7 @@ nav {
                         position: absolute;
                         display: none;
                         top: 7.4rem;
+                        z-index: 3;
     
                         a {
                             width: 22rem;

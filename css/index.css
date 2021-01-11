@@ -100,6 +100,7 @@ nav .nav-hamburger {
   position: fixed;
   display: none;
   top: 5rem;
+  z-index: 3;
 }
 
 @media screen and (min-width: 1024px) {
@@ -211,6 +212,7 @@ nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger-checkbox:checked ~ 
     position: absolute;
     display: none;
     top: 7.4rem;
+    z-index: 3;
   }
   nav .nav-hamburger .nav-hamburger-wrapper .sub-nav-hamburger .sub-nav-hamburger-content a {
     width: 22rem;

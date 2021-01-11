@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(".hamburger-checkbox").click(function () {
         if ($(this).prop("checked") == true) {
             $(".nav-hamburger").css("display", "block");
+            // $(".nav-hamburger").css({"display": "block", "z-index": "3"});
         } else {
             $(".nav-hamburger").css("display", "");
         }
